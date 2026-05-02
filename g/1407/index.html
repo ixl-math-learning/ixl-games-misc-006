@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>T-Rex Run 3D</title>
+<!-- Custom CSS -->
+<link href="dino3d/css/style.min__q77a2ed2a.css" rel="stylesheet"/>
+<!-- Preload -->
+<link as="image" href="dino3d/media/repeat.png" rel="preload">
+<link as="image" href="dino3d/media/preloader-dino.png" rel="preload"/>
+<link as="image" href="dino3d/media/3d-title.png" rel="preload"/>
+</link></head>
+<body>
+<div id="preloader">
+<div class="progress">
+<div class="chart">
+<div class="bar lime bar-0" id="game-load-progress">
+<div class="face top">
+<div class="growing-bar"></div>
+</div>
+<div class="face side-0">
+<div class="growing-bar"></div>
+</div>
+<div class="face floor">
+<div class="growing-bar"></div>
+</div>
+<div class="face side-a"></div>
+<div class="face side-b"></div>
+<div class="face side-1">
+<div class="growing-bar"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="chrome-no-internet">
+<div class="poster"></div>
+<h1>Нет подключения к Интернету</h1>
+<div class="info">
+<p>Попробуйте сделать следующее:</p>
+<ul>
+<li>Проверьте сетевые кабели, модем и маршрутизатор.</li>
+<li>Подключитесь к сети Wi-Fi ещё раз.</li>
+<li class="hidden" id="game-start">«Начать игру»</li>
+</ul>
+<small>ERR_LOADING_ASSETS</small>
+<small id="game-load-progress">0%</small>
+</div>
+</div>
+<div class="hidden" id="game-restart">
+<h1>ИГРА ЗАКОНЧЕНА</h1>
+<img src="dino3d/media/repeat.png"/>
+</div>
+<script src="dino3d/libs/three/three.min.js"></script>
+<script src="dino3d/libs/three/controls/OrbitControls.js"></script>
+<script src="dino3d/libs/three/helpers/CameraHelper.js"></script>
+<script src="dino3d/libs/three/loaders/OBJLoader.js"></script>
+<script src="dino3d/libs/vox/vox.min.js"></script>
+<!-- Shaders & Postprocessing -->
+<script src="dino3d/libs/three/postprocessing/EffectComposer.js"></script>
+<script src="dino3d/libs/three/postprocessing/RenderPass.js"></script>
+<script src="dino3d/libs/three/postprocessing/ShaderPass.js"></script>
+<script src="dino3d/libs/three/shaders/CopyShader.js"></script>
+<script src="dino3d/libs/three/shaders/ConvolutionShader.js"></script>
+<script src="dino3d/libs/three/postprocessing/SAOPass.js"></script>
+<script src="dino3d/libs/three/shaders/SAOShader.js"></script>
+<script src="dino3d/libs/three/shaders/DepthLimitedBlurShader.js"></script>
+<script src="dino3d/libs/three/shaders/UnpackDepthRGBAShader.js"></script>
+<script src="dino3d/libs/nebula/three-nebula.js"></script>
+<script src="dino3d/libs/howler/howler.min.js"></script>
+<script src="dino3d/libs/visibly/visibly.js"></script>
+<script src="dino3d/js/config-high__q77a2ed2a.js"></script>
+<script src="dino3d/js/build.min__q77a2ed2a.js"></script>
+</body>
+</html>
